@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Este es el sitio web de un producto genial">
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!--Esta zona se puede usar para algun framework-->
 
     <!--Esta zona se puede usar para algun framework-->
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Tienda Online</title>
 </head>
 <body>
@@ -26,13 +29,13 @@
         </div>
     </nav>
     <!--final de mi header-->
-    <h2 class="main_section">
-        Este es un producto increible, no sé que haces viendo lo que puedes tener
-    </h2>
-    <video src="https://www.youtube.com/watch?v=LHu2G4SeSK4"></video>
-    <!--inicio de mis productos -->
-    <div class="products">
-        <div class="product">
+    <section class="descripcion">
+        <h2 class="des_store">
+            Somos una floristeria que busca acompañarte en esos momentos importantes con productos de calidad para hacer de ellos los más especiales</h2>
+            <video class="vid" src="images/LA_VIDA_DE_LAS_FLORES.mp4" autoplay muted loop></video></section>
+            <!--inicio de mis productos -->
+    <div class="row" id="products">
+        <div class="col-lg-4 col-md-6 col-12 product">
             <div class="content">
                 <img height="150px" src="https://cdn140.picsart.com/305835513170211.png?type=webp&to=min&r=640" alt="">
             </div>
@@ -42,17 +45,17 @@
                 Lo quiero
             </button>
         </div>
-        <div class="product">
+        <div class="col-lg-4 col-md-6 col-12 product">
             <div class="content">
-                <img height="150px" src="https://cdn150.picsart.com/upscale-242521535029212.png" alt="">
+                <img height="150px" src="https://fruitsante.co/wp-content/uploads/2019/07/corazon-de-girasoles-min.png" alt="">
             </div>
-            <h3>Corona de girasoles</h3>
-            <p>Corona de 10 girasoles $7.000</p>
+            <h3>Corazón de girasoles</h3>
+            <p>Corazón de 10 girasoles $7.000</p>
             <button class="main_btn">
                 Lo quiero
             </button>
         </div>
-        <div class="product">
+        <div class="col-lg-4 col-md-6 col-12 product">
             <div class="content">
                 <img height="150px" src="https://cdn.shopify.com/s/files/1/1292/2935/products/A7420_x700.png?v=1573848775" alt="">
             </div>
@@ -62,7 +65,7 @@
                 Lo quiero
             </button>
         </div>
-        <div class="product">
+        <div class="col-lg-4 col-md-6 col-12 product">
             <div class="content">
                 <img height="150px" src="https://1.bp.blogspot.com/-XPZvZXhCtc0/VX_6qQvCXJI/AAAAAAAAKBs/WltV-T-5d-g/s1600/modre-small.png" alt="">
             </div>
@@ -72,7 +75,7 @@
                 Lo quiero
             </button>
         </div>
-        <div class="product">
+        <div class="col-lg-4 col-md-6 col-12 product">
             <div class="content">
                 <img height="150px" src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b26a9.png" alt="">
             </div>
@@ -82,7 +85,7 @@
                 Lo quiero
             </button>
         </div>
-        <div class="product">
+        <div class="col-lg-4 col-md-6 col-12 product">
             <div class="content">
                 <img height="150px" src="https://cdn.pixabay.com/photo/2017/08/20/07/10/lilies-2660741_960_720.png" alt="">
             </div>
@@ -93,10 +96,5 @@
             </button>
         </div>
     </div>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
-        <input id="submit" type="submit" value="Get Started" class="btn">
-        </form>
-    <!--final de mis productos-->
 </body>
 </html>
